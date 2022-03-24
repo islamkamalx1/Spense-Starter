@@ -400,3 +400,58 @@ nav ul a:hover::before{
         width: 300px;
     }
 }
+/* ############# Footer ############### */
+footer{
+    background-color: black;
+    padding: 40px 0;
+}
+footer .container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+footer .spense{
+    max-width: 300px;
+}
+footer .spense h4{
+    color: white;
+}
+footer p{
+    color: #888;
+    line-height: 1.5;
+    margin-top: 10px
+}
+footer .container ul li:first-of-type a:first-of-type{
+    color: white;
+    margin-bottom: 15px;
+    display: block;
+    font-weight: bold;
+}
+footer .container ul li:not(:first-of-type) a{
+    color: #888;
+    display: block;
+    width: fit-content;
+    margin-bottom: 10px;
+    transition: .3s;
+    position: relative;
+}
+footer .container ul li:not(:first-of-type) a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    background-color: #888;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    transition: .3s;
+}
+footer .container ul li:not(:first-of-type) a:hover::before{
+    width: 100%;
+}
+
+footer .container ul li:not(:first-of-type) a:hover
+{
+    transform: translateX(5px);
+}
